@@ -1,4 +1,10 @@
 server:
   port: 8888
   
-spring:  profiles:    active: native  cloud:    config:      server:        native:          search-locations: C:/Users/ramon/Desktop/Cursos/microservices-repo
+spring:  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ramonrune/microservices-java
+          default-label: main
+          search-paths: microservices-repo

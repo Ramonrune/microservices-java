@@ -11,11 +11,11 @@ public class InfoFornecedor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	private String nome;
-
+	
 	private String estado;
-
+	
 	private String endereco;
 
 	public Long getId() {
@@ -49,5 +49,6 @@ public class InfoFornecedor {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
+	
+	
 }
